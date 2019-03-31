@@ -41,9 +41,6 @@ set confirm
 set wildignore+=.pyc,.swp
 filetype off                  " required
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
 " Spell checking
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
