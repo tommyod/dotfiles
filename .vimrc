@@ -117,3 +117,79 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
+" >>>>>>>>>> TOMMYs CONFIGURATION >>>>>>>>>>>>>>>>>>
+
+set encoding=utf-8
+
+syntax on
+
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=1
+
+
+" set tabs to have 4 spaces
+set ts=4
+
+" indent when moving to the next line while writing code
+set autoindent
+
+" expand tabs into spaces
+set expandtab
+
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+
+" show a visual line under the cursor's current line
+set cursorline
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
+
+" turn hybrid line numbers on
+set number relativenumber
+set nu rnu
+
+set laststatus=2
+
+nnoremap <buffer> <F5> <Esc>:w <cr> :exec '!python' shellescape(@%, 1)<cr>
+
+" >>>>>>>>>>>>>>>>>>>>>> START VUNDLE SCRIPT >>>>>>>>>>>>>>>>>>>>>>>>>>>
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tmhedberg/SimpylFold' 
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'itchyny/lightline.vim'
+
+
+" SimpylFold settings
+let g:SimpylFold_docstring_preview = 1
+
+
+
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+
+" ...
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" <<<<<<<<<<<<<<<<<<<<<<< END VUNDLE SCRIPT <<<<<<<<<<<<<<<<<<<<<<
