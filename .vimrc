@@ -90,22 +90,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 
-"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-"Plugin 'altercation/vim-colors-solarized'
-"Plugin 'jnurmine/Zenburn'
-
-syntax enable
-let g:solarized_termcolors=256
-"set background=dark
-colorscheme solarized
-
-
-
-"call togglebg#map("<F5>")
-
-
-
-
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -122,7 +106,6 @@ Plugin 'jistr/vim-nerdtree-tabs'
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'lervag/vimtex'
-
 
 
 " All of your Plugins must be added before the following line
