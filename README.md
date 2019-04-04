@@ -18,6 +18,7 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 - darktable
 - gimp
 - git
+- htop
 - inkscape
 - laptop-mode-tools
 - qbittorrent
