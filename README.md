@@ -13,34 +13,38 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 
 ### Apt get
 
-- vim
-- git
-- ranger
-- tmux
-- zsh
-- curl
 - cowsay
-- qbittorrent
-- tree
-- texstudio
-- texlive-full
-- snap
-- ubuntu-restricted-extras
-- laptop-mode-tools
+- curl
 - darktable
 - gimp
+- git
 - inkscape
+- laptop-mode-tools
+- qbittorrent
+- ranger
+- snap
+- texlive-full
+- texstudio
+- tmux
+- tree
+- ubuntu-restricted-extras
+- unity-tweak-tool
+- vim
+- zsh
 
 ### Snappy
 
 - sudo snap install atom --classic
-- sudo snap install spotify
-- sudo snap install pycharm-professional --classic
 - sudo snap install postman
-- sudo snap install vlc
+- sudo snap install pycharm-professional --classic
 - sudo snap install slack --classic
+- sudo snap install spotify
+- sudo snap install sublime-text --classic
+- sudo snap install vlc
 
 ### Other
 
 - anaconda
 - privateinternetaccess
+- oh-my-zsh
+- flux
