@@ -18,6 +18,8 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 - darktable
 - gimp
 - git
+- gnome-control-center
+- gnome-online-accounts
 - htop
 - inkscape
 - laptop-mode-tools
