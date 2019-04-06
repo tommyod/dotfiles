@@ -16,6 +16,7 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 - cowsay
 - curl
 - darktable
+- geogebra
 - gimp
 - git
 - gnome-control-center
