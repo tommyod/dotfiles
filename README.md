@@ -13,6 +13,7 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 
 ### Apt get
 
+- aptitude
 - cowsay
 - curl
 - darktable
