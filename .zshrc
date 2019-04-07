@@ -109,3 +109,5 @@ autoload -Uz compinit && compinit
 # For anaconda
  . /home/tommy/anaconda3/etc/profile.d/conda.sh
  conda activate
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

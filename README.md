@@ -9,14 +9,19 @@ This repository contains the dotfiles for my personal Linux setup.
 ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 ```
 
-## Ubuntu packages
+## Software to install 
 
 ### Apt get
 
+The following packages are installed via `sudo apt get install`.
+
 - aptitude
+- artha
+- cmatrix
 - cowsay
 - curl
 - darktable
+- ffmpeg
 - geogebra
 - gimp
 - git
@@ -25,6 +30,7 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 - htop
 - inkscape
 - laptop-mode-tools
+- python3-dev
 - qbittorrent
 - ranger
 - snap
@@ -35,9 +41,13 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 - ubuntu-restricted-extras
 - unity-tweak-tool
 - vim
+- weechat
+- whois
 - zsh
 
 ### Snappy
+
+The following are installed via Snappy.
 
 - sudo snap install atom --classic
 - sudo snap install postman
@@ -49,7 +59,32 @@ ln --symbolic ~/Desktop/dotfiles/.zshrc ~/.zshrc
 
 ### Other
 
+Other software, installed from the web.
+
 - anaconda
-- privateinternetaccess
-- oh-my-zsh
 - flux
+- fzf
+- oh-my-zsh
+- privateinternetaccess
+
+## Other stuff
+
+### Script to fix caps lock problem
+
+There's a delay on the Caps Lock button on Ubuntu.
+It can be fixed with the following command.
+
+
+```bash
+
+xkbcomp -xkb "$DISPLAY" - | sed 's#key <CAPS>.*#key <CAPS> {\
+    repeat=no,\
+    type[group1]="ALPHABETIC",\
+    symbols[group1]=[ Caps_Lock, Caps_Lock],\
+    actions[group1]=[ LockMods(modifiers=Lock),\
+    Private(type=3,data[0]=1,data[1]=3,data[2]=3)]\
+    };\
+    #' | xkbcomp -w 0 - "$DISPLAY" 2>/dev/null
+
+
+```
