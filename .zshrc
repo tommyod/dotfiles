@@ -10,6 +10,13 @@
 # "refined"
 ZSH_THEME="bureau"
 
+# Run ls after every cd automatically, see
+# https://stackoverflow.com/questions/3964068/zsh-automatically-run-ls-after-every-cd
+function chpwd() {
+    emulate -L zsh
+    ls -a
+}
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
