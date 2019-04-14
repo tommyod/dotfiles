@@ -1,3 +1,6 @@
+" No not try to emulate vi
+set nocompatible  
+
 " For moving lines up and down with ALT + j/k
 
 nnoremap <S-j> :m .+1<CR>==
@@ -6,6 +9,9 @@ inoremap <S-j> <Esc>:m .+1<CR>==gi
 inoremap <S-k> <Esc>:m .-2<CR>==gi
 vnoremap <S-j> :m '>+1<CR>gv=gv
 vnoremap <S-k> :m '<-2<CR>gv=gv
+
+" Highlight the cursor lin
+set cursorline
 
 " Enable line numbers
 set number
@@ -46,6 +52,11 @@ set background=dark
 " Show a confirmation dialog when closing an unsaved file
 set confirm
 
+" Fuzzy file search with vim (youtube: how to do 90% of what plugins do)
+" Path provides tab completion for file related tasks, tab menu
+set path+=**
+set wildmenu
+
 " Ignore filws matching these patterns when opening files based on a glob pattern
 set wildignore+=.pyc,.swp
 filetype off                  " required
@@ -80,7 +91,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-set nocompatible              " required
 
 "let python_highlight_all=1
 syntax on
