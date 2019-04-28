@@ -39,6 +39,7 @@ The following packages are installed via `sudo apt get install`.
 - tmux
 - tree
 - ubuntu-restricted-extras
+- ufraw-batch
 - unity-tweak-tool
 - vim
 - weechat
