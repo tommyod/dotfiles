@@ -30,6 +30,7 @@ The following packages are installed via `sudo apt get install`.
 - htop
 - inkscape
 - laptop-mode-tools
+- peek
 - python3-dev
 - qbittorrent
 - ranger
