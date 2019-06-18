@@ -21,6 +21,8 @@ The following packages are installed via `sudo apt get install`.
 - cowsay
 - curl
 - darktable
+- linux-headers-generic
+- build-essential
 - ffmpeg
 - geogebra
 - gimp
