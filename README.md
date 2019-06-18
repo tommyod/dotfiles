@@ -22,6 +22,7 @@ The following packages are installed via `sudo apt get install`.
 - curl
 - darktable
 - linux-headers-generic
+- bcmwl-kernel-source 
 - build-essential
 - ffmpeg
 - geogebra
