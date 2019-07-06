@@ -17,13 +17,12 @@ The following packages are installed via `sudo apt get install`.
 
 - aptitude
 - artha
+- bcmwl-kernel-source 
+- build-essential
 - cmatrix
 - cowsay
 - curl
 - darktable
-- linux-headers-generic
-- bcmwl-kernel-source 
-- build-essential
 - ffmpeg
 - geogebra
 - gimp
@@ -33,10 +32,14 @@ The following packages are installed via `sudo apt get install`.
 - htop
 - inkscape
 - laptop-mode-tools
-- peek
+- linux-headers-generic
+- make
 - python3-dev
 - qbittorrent
 - ranger
+- ruby 
+- ruby-bundler
+- ruby-dev
 - snap
 - texlive-full
 - texstudio
@@ -49,6 +52,7 @@ The following packages are installed via `sudo apt get install`.
 - weechat
 - whois
 - zsh
+
 
 ### Snappy
 
