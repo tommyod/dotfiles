@@ -76,6 +76,16 @@ Other software, installed from the web.
 - oh-my-zsh
 - privateinternetaccess
 
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+chmod +x Anaconda3-2019.03-Linux-x86_64.sh
+./Anaconda3-2019.03-Linux-x86_64.sh
+<install>
+rm Anaconda3-2019.03-Linux-x86_64.sh
+conda update --name base --channel defaults conda --yes 
+conda update --all --yes
+```
+
 ## Other stuff
 
 ### Script to fix caps lock problem
