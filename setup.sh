@@ -44,9 +44,6 @@ apt install weechat --yes -q -q
 apt install whois --yes -q -q
 apt install zsh --yes -q -q
 
-# Git setup - cache PW for a year
-git config --global credential.helper 'cache --timeout=31536000'
-
 # Install packages from snappy
 snap install atom --classic
 snap install postman
@@ -98,3 +95,7 @@ for repo in `curl -s https://api.github.com/users/$GHUSER/repos?per_page=100 | g
     git clone $repo;
     cd ../dotfiles/;
 done;
+
+# Git setup - cache PW for a year
+git config --global user.name "tommyod"
+git config --global credential.helper 'cache --timeout=31536000'
