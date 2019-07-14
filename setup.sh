@@ -49,9 +49,14 @@ snap install atom --classic
 snap install postman
 snap install pycharm-professional --classic
 snap install slack --classic
+snap install skype --classic
+snap install google-cloud-sdk --classic
 snap install spotify
+snap install wekan # kanban board
+snap install toggldesktop --edge
 snap install sublime-text --classic
 snap install vlc
+snap install obs-studio
 
 # Install anaconda
 # Download, make executable, install silently, remove .sh and update
