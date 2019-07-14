@@ -44,6 +44,9 @@ apt install weechat --yes -q -q
 apt install whois --yes -q -q
 apt install zsh --yes -q -q
 
+# Git setup - cache PW for a year
+git config --global credential.helper 'cache --timeout=31536000'
+
 # Install packages from snappy
 snap install atom --classic
 snap install postman
