@@ -15,6 +15,7 @@ apt install cmatrix --yes -q -q
 apt install cowsay --yes -q -q
 apt install curl --yes -q -q
 apt install darktable --yes -q -q
+apt install djview --yes -q -q
 apt install geogebra --yes -q -q
 apt install gimp --yes -q -q
 apt install git --yes -q -q
