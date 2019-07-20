@@ -23,6 +23,7 @@ The following packages are installed via `sudo apt get install`.
 - cowsay
 - curl
 - darktable
+- djview
 - ffmpeg
 - geogebra
 - gimp
