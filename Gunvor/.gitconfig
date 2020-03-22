@@ -1,0 +1,5 @@
+[user]
+	email = gunvor.lemvik@gmail.com
+	name = Gunvor Lemvik
+[alias]
+	lg = log --oneline
