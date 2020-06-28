@@ -2,7 +2,10 @@
 
 # Install anaconda
 # Download, make executable, install silently, remove .sh and update
-wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/
+VERSION=$(grep 'Linux-x86_64' index.html | head -n 1 | cut -d '"' -f 2) # Find the latest version of anaconda
+rm index.html
+wget https://repo.anaconda.com/archive/$VERSION # Download latest version
 chmod +x Anaconda3-2019.03-Linux-x86_64.sh
 ./Anaconda3-2019.03-Linux-x86_64.sh -b -p $HOME/anaconda3
 rm Anaconda3-2019.03-Linux-x86_64.sh
