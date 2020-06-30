@@ -22,7 +22,8 @@ assert not return_code
 
 
 programs = ["vlc", "texstudio", "texlive-full", "vim", "git", "ranger", "zsh",
-"geogebra", "make", "tmux", "curl", "whois", "htop", "peek", "tree"]
+"geogebra", "make", "tmux", "curl", "whois", "htop", "peek", "tree", "graphviz", 
+            "libopenblas-base"]
 
 
 for program in programs:
