@@ -14,9 +14,3 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln --symbolic ~/Desktop/dotfiles/Tommy/.vimrc ~/.vimrc --force
 ln --symbolic ~/Desktop/dotfiles/Tommy/.zshrc ~/.zshrc --force
 
-# Fix the caps lock problem
-chmod +x ../Scripts/caps_lock.sh
-echo 'description     "fix ubuntu caps lock problem"' > /etc/init/caps_lock.conf
-echo "start on startup
-task
-exec $HOME/Desktop/dotfiles/Scripts/caps_lock.sh" >> /etc/init/caps_lock.conf
