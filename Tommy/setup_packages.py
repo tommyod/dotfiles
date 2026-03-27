@@ -39,7 +39,7 @@ for program in programs:
 return_code = subprocess.call(["snap", "refresh"])
 assert not return_code
     
-programs = ["postman", "slack", "skype", "spotify", "google-cloud-sdk", "chromium"]
+programs = ["postman", "slack", "spotify"]
 
 
 for program in programs:
